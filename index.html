@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Ajar: Analisis Ancaman Keamanan Data Pribadi di Era Digital</title>
+  <meta name="description" content="Media pembelajaran interaktif tentang analisis ancaman keamanan data pribadi di era digital — mencakup jenis ancaman, pelaku, dampak, kerangka hukum UU PDP, dan strategi mitigasi.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#beranda" class="logo">
+        <span class="logo-icon">🛡️</span>
+        <span class="logo-text">
+          <span class="logo-name">Aco Fathir Muslim</span>
+          <span class="logo-sub">H0625302 · CyberEdu</span>
+        </span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#tujuan" class="nav-link">Tujuan</a>
+        <a href="#materi" class="nav-link">Materi</a>
+        <a href="#ancaman" class="nav-link">Ancaman</a>
+        <a href="#hukum" class="nav-link">Hukum</a>
+        <a href="#mitigasi" class="nav-link">Mitigasi</a>
+        <a href="#quiz" class="nav-link nav-cta">Kuis</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="beranda">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="pulse-dot"></span> Media Pembelajaran Digital
+      </div>
+      <h1 class="reveal delay-1">
+        Analisis <span class="text-gradient" data-text="Ancaman Keamanan">Ancaman Keamanan</span><br>
+        Data Pribadi di Era Digital
+      </h1>
+      <p class="hero-sub reveal delay-2">
+        Memahami, menganalisis, dan memitigasi ancaman terhadap data pribadi —
+        dari phishing hingga kebocoran data skala besar — agar Anda menjadi
+        warga digital yang melek keamanan.
+      </p>
+      <div class="hero-buttons reveal delay-3">
+        <a href="#materi" class="btn btn-primary">Mulai Belajar</a>
+        <a href="#quiz" class="btn btn-outline">Uji Pemahaman</a>
+      </div>
+      <div class="hero-stats reveal delay-4">
+        <div class="stat"><span class="stat-num" data-target="2.6">0</span><span class="stat-label">Miliar orang terdampak kebocoran</span></div>
+        <div class="stat"><span class="stat-num" data-target="18">0</span><span class="stat-label">Jenis ancaman dibahas</span></div>
+        <div class="stat"><span class="stat-num" data-target="5">0</span><span class="stat-label">Bab materi interaktif</span></div>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- ===== TUJUAN PEMBELAJARAN ===== -->
+  <section class="section section-light" id="tujuan">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Pengantar</span>
+        <h2>Tujuan Pembelajaran</h2>
+        <p>Setelah mempelajari materi ini, Anda diharapkan mampu:</p>
+      </div>
+      <div class="goals-grid">
+        <div class="goal-card reveal">
+          <div class="goal-num">01</div>
+          <h3>Memahami Konsep</h3>
+          <p>Menjelaskan pengertian data pribadi, privasi digital, dan lanskap ancaman keamanan di era digital.</p>
+        </div>
+        <div class="goal-card reveal delay-1">
+          <div class="goal-num">02</div>
+          <h3>Menganalisis Ancaman</h3>
+          <p>Mengidentifikasi jenis-jenis ancaman, teknik serangan, dan pola perilaku pelaku kejahatan siber.</p>
+        </div>
+        <div class="goal-card reveal delay-2">
+          <div class="goal-num">03</div>
+          <h3>Menilai Dampak</h3>
+          <p>Menganalisis dampak pelanggaran data pribadi terhadap individu, organisasi, dan masyarakat.</p>
+        </div>
+        <div class="goal-card reveal delay-3">
+          <div class="goal-num">04</div>
+          <h3>Merancang Mitigasi</h3>
+          <p>Menerapkan prinsip keamanan data dan strategi perlindungan sesuai kerangka hukum yang berlaku.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MATERI ===== -->
+  <section class="section" id="materi">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Bab 1</span>
+        <h2>Materi Pembelajaran</h2>
+        <p>Peta materi — klik untuk melompat ke bab yang Anda inginkan.</p>
+      </div>
+      <div class="chapter-nav reveal">
+        <a href="#bab-pendahuluan" class="chapter-pill"><span>01</span> Pendahuluan</a>
+        <a href="#bab-data-pribadi" class="chapter-pill"><span>02</span> Data Pribadi</a>
+        <a href="#bab-ancaman" class="chapter-pill"><span>03</span> Jenis Ancaman</a>
+        <a href="#bab-pelaku" class="chapter-pill"><span>04</span> Pelaku Ancaman</a>
+        <a href="#bab-dampak" class="chapter-pill"><span>05</span> Dampak</a>
+        <a href="#bab-hukum" class="chapter-pill"><span>06</span> Kerangka Hukum</a>
+        <a href="#bab-mitigasi" class="chapter-pill"><span>07</span> Mitigasi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BAB 1: PENDAHULUAN ===== -->
+  <section class="section section-dark" id="bab-pendahuluan">
+    <div class="container content-grid">
+      <div class="content-text reveal">
+        <span class="bab-label">Bab 01</span>
+        <h2>Pendahuluan: Era Digital &amp; Jejak Digital Kita</h2>
+        <p>Setiap kali Anda membuat akun media sosial, bertransaksi <em>online</em>, memakai aplikasi <em>health</em>, atau sekadar menjelajahi internet, Anda meninggalkan jejak digital yang disebut <strong>data pribadi</strong>.</p>
+        <p>Di era digital, data pribadi telah menjadi aset bernilai tinggi — sering disebut sebagai <em>"minyak baru"</em> ekonomi digital. Nilainya bukan hanya untuk iklan, tetapi juga menjadi target utama para pelaku kejahatan siber.</p>
+
+        <div class="callout callout-info">
+          <div class="callout-icon">💡</div>
+          <div>
+            <strong>Fakta Menarik:</strong> Rata-rata seseorang menghasilkan &gt;1,5 GB jejak digital per hari melalui aktivitas online — setara dengan data pribadi yang bisa dijual di pasar gelap.
+          </div>
+        </div>
+
+        <h3>Mengapa Ancaman Berubah di Era Digital?</h3>
+        <ul class="check-list">
+          <li><strong>Skala:</strong> Serangan dapat menarget ribuan hingga jutaan orang sekaligus.</li>
+          <li><strong>Jarak:</strong> Penyerang bisa berada di belahan dunia mana pun.</li>
+          <li><strong>Kecepatan:</strong> Kebocoran data dapat tersebar dalam hitungan detik.</li>
+          <li><strong>Persenjataan AI:</strong> Phishing dan deepfake makin sulit dibedakan dari yang asli.</li>
+        </ul>
+      </div>
+      <div class="content-visual reveal delay-1">
+        <div class="visual-card">
+          <div class="visual-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+          <div class="terminal">
+            <div class="term-line"><span class="term-prompt">$</span> identitas.data_pribadi</div>
+            <div class="term-line dim">{ "nama": "...", "nik": "...", "email": "..." }</div>
+            <div class="term-line dim">{ "telepon": "...", "alamat": "...", "rekening": "..." }</div>
+            <div class="term-line threat">⚠ ancaman.terdeteksi = true</div>
+            <div class="term-line">$ _</div>
+          </div>
+        </div>
+        <div class="mini-stat-cards">
+          <div class="mini-stat"><span class="mini-num">73%</span><p>pengguna internet pernah menerima ancaman phishing (APWG, 2024)</p></div>
+          <div class="mini-stat"><span class="mini-num">$4.45M</span><p>rata-rata biaya kebocoran data global per insiden (IBM 2024)</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BAB 2: DATA PRIBADI ===== -->
+  <section class="section section-light" id="bab-data-pribadi">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="bab-label">Bab 02</span>
+        <h2>Apa Itu Data Pribadi?</h2>
+        <p>Data pribadi adalah informasi apa pun yang memungkinkan seseorang diidentifikasi — baik sendiri maupun dikombinasikan dengan informasi lain.</p>
+      </div>
+
+      <div class="data-types reveal">
+        <div class="data-type-card sensitive">
+          <div class="data-type-icon">🔴</div>
+          <h3>Data Pribadi Sensitif</h3>
+          <p>Informasi yang dapat menimbulkan diskriminasi atau bahaya serius jika disalahgunakan:</p>
+          <ul>
+            <li>Kesehatan &amp; kondisi medis</li>
+            <li>Biometrik (sidik jari, wajah)</li>
+            <li>Kepercayaan/agama</li>
+            <li>Data anak</li>
+            <li>Data keuangan &amp; rekening</li>
+          </ul>
+        </div>
+        <div class="data-type-card general">
+          <div class="data-type-icon">🟡</div>
+          <h3>Data Pribadi Umum</h3>
+          <p>Informasi yang dapat mengidentifikasi seseorang:</p>
+          <ul>
+            <li>Nama &amp; tanggal lahir</li>
+            <li>Alamat email &amp; telepon</li>
+            <li>Alamat rumah</li>
+            <li>Nomor identitas (KTP/NIK)</li>
+            <li>Foto &amp; riwayat pendidikan</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout-warning reveal">
+        <div class="callout-icon">⚠️</div>
+        <div>
+          <strong>Catatan Penting:</strong> Di bawah UU PDP No. 27 Tahun 2022, data pribadi sensitif memerlukan perlindungan lebih ketat. Pengumpulan, pemrosesan, dan transfer data pribadi tanpa persetujuan yang sah dapat dikenai sanksi pidana hingga denda miliaran rupiah.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BAB 3: JENIS ANCAMAN ===== -->
+  <section class="section section-dark" id="bab-ancaman">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="bab-label">Bab 03</span>
+        <h2>Jenis-Jenis Ancaman Keamanan Data Pribadi</h2>
+        <p>Klik setiap kartu untuk melihat penjelasan detail tentang teknik serangan tersebut.</p>
+      </div>
+
+      <div class="threat-grid" id="ancaman">
+        <div class="threat-card reveal" data-expand>
+          <div class="threat-icon">🎣</div>
+          <h3>Phishing</h3>
+          <span class="threat-tag">Sosial Engineering</span>
+          <div class="threat-detail">
+            <p>Serangan memancing data pribadi melalui email/situs palsu yang meniru entitas tepercaya (bank, e-commerce, kantor pos). Tujuannya mencuri kredensial, OTP, atau data kartu.</p>
+            <p class="threat-tip"><strong>Ciri:</strong> URL mencurigakan, urgensi palsu ("Akun Anda akan diblokir!"), lampiran aneh, domain tidak resmi.</p>
+          </div>
+        </div>
+        <div class="threat-card reveal delay-1" data-expand>
+          <div class="threat-icon">📱</div>
+          <h3>Smishing &amp; Vishing</h3>
+          <span class="threat-tag">Sosial Engineering</span>
+          <div class="threat-detail">
+            <p>Variasi phishing lewat <strong>SMS (smishing)</strong> dan <strong>telepon (vishing)</strong>. Penyerang sering menyamar sebagai bank, kurir, atau instansi pemerintah untuk memancing OTP dan PIN.</p>
+            <p class="threat-tip"><strong>Ciri:</strong> SMS berisi link pendek, panggilan menuntut data rahasia — padahal bank resmi tidak pernah menanyakan OTP.</p>
+          </div>
+        </div>
+        <div class="threat-card reveal delay-2" data-expand>
+          <div class="threat-icon">🦠</div>
+          <h3>Malware</h3>
+          <span class="threat-tag">Perangkat Lunak Jahat</span>
+          <div class="threat-detail">
+            <p>Perangkat lunak berbahaya yang menyusup ke perangkat untuk mencuri data, memata-matai aktivitas, atau mengambil alih kendali. Termasuk spyware, trojan, dan keylogger yang merekam ketikan password.</p>
+            <p class="threat-tip"><strong>Wajib waspada:</strong> software bajakan, lampiran email, iklan berbahaya (malvertising), dan flashdisk tidak dikenal.</p>
+          </div>
+        </div>
+        <div class="threat-card reveal" data-expand>
+          <div class="threat-icon">🔒</div>
+          <h3>Ransomware</h3>
+          <span class="threat-tag">Pemerasan Digital</span>
+          <div class="threat-detail">
+            <p>Malware yang mengenkripsi seluruh data korban lalu menuntut tebusan (biasanya kripto) untuk memulihkan akses. Di era modern, data korban juga diancam dibocorkan jika tidak membayar (double extortion).</p>
+            <p class="threat-tip"><strong>Pencegahan:</strong> Backup rutin 3-2-1 (3 salinan, 2 media, 1 offline), jangan bayar tebusan, segmentasi jaringan.</p>
+          </div>
+        </div>
+        <div class="threat-card reveal delay-1" data-expand>
+          <div class="threat-icon">🔓</div>
+          <h3>Brute Force &amp; Credential Stuffing</h3>
+          <span class="threat-tag">Serangan Kredensial</span>
+          <div class="threat-detail">
+            <p><strong>Brute force:</strong> mencoba semua kemungkinan password secara otomatis. <strong>Credential stuffing:</strong> mencoba username/password hasil bocoran pada situs lain karena banyak orang memakai password sama di mana-mana.</p>
+            <p class="threat-tip"><strong>Pertahanan:</strong> MFA, password manager, password unik per akun, dan rate-limiting.</p>
+          </div>
+        </div>
+        <div class="threat-card reveal delay-2" data-expand>
+          <div class="threat-icon">👁️</div>
+          <h3>Man-in-the-Middle (MITM)</h3>
+          <span class="threat-tag">Penyadapan</span>
+          <div class="threat-detail">
+            <p>Penyerang menyisipkan diri di antara korban dan server untuk menyadap atau mengubah komunikasi — misalnya pada WiFi publik tidak aman, DNS spoofing, atau VPN palsu.</p>
+            <p class="threat-tip"><strong>Pertahanan:</strong> Selalu gunakan HTTPS, hindari WiFi publik untuk transaksi penting, aktifkan VPN tepercaya.</p>
+          </div>
+        </div>
+        <div class="threat-card reveal" data-expand>
+          <div class="threat-icon">👤</div>
+          <h3>Social Engineering</h3>
+          <span class="threat-tag">Manipulasi Psikologis</span>
+          <div class="threat-detail">
+            <p>Teknik memanipulasi manusia (bukan teknologi) untuk membocorkan informasi rahasia — melalui keserakahan, rasa takut, urgensi, atau kepercayaan palsu. Phishing hanyalah salah satu bentuknya.</p>
+            <p class="threat-tip"><strong>Ciri:</strong> Pressure tactics, impersonasi otoritas, informasi terlalu personal (hasil dari doxxing/data breach sebelumnya).</p>
+          </div>
+        </div>
+        <div class="threat-card reveal delay-1" data-expand>
+          <div class="threat-icon">📸</div>
+          <h3>Doxxing &amp; Impersonasi</h3>
+          <span class="threat-tag">Kekerasan Digital</span>
+          <div class="threat-detail">
+            <p><strong>Doxxing:</strong> membocorkan data pribadi korban (alamat, telepon, keluarga) ke publik. <strong>Impersonasi:</strong> menyamar sebagai korban untuk penipuan — sering diperkuat <strong>deepfake AI</strong> yang memalsukan suara/wajah/video.</p>
+            <p class="threat-tip"><strong>Tren 2024-2025:</strong> Penipuan deepfake voice targeting karyawan untuk transfer dana palsu meningkat tajam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BAB 4: PELAKU ANCAMAN ===== -->
+  <section class="section section-light" id="bab-pelaku">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="bab-label">Bab 04</span>
+        <h2>Siapa Para Pelaku Ancaman?</h2>
+        <p>Memahami motivasi penyerang membantu kita menganalisis pola ancaman yang lebih efektif.</p>
+      </div>
+      <div class="actor-list">
+        <div class="actor-item reveal">
+          <div class="actor-badge motive-financial">💰</div>
+          <div class="actor-body">
+            <h3>Cybercriminal — Motif Finansial</h3>
+            <p>Kelompok kejahatan terorganisir yang mencuri data untuk dijual di <em>dark web</em>: data kartu kredit, kredensial perbankan, identitas untuk fraud. Ransomware-as-a-Service membuat kejahatan ini bisa "disewa".</p>
+            <div class="actor-meta">Motivasi: Uang &nbsp;·&nbsp; Keahlian: Tinggi &nbsp;·&nbsp; Skala: Besar</div>
+          </div>
+        </div>
+        <div class="actor-item reveal delay-1">
+          <div class="actor-badge motive-spy">🕵️</div>
+          <div class="actor-body">
+            <h3>Aktor Negara (APT)</h3>
+            <p><em>Advanced Persistent Threat</em> — serangan siber bersponsor negara yang sangat canggih dan sabar, menarget infrastruktur kritis, institusi pemerintah, dan perusahaan teknologi untuk spionase atau sabotase.</p>
+            <div class="actor-meta">Motivasi: Spionase/Sabotase &nbsp;·&nbsp; Keahlian: Sangat Tinggi &nbsp;·&nbsp; Skala: Strategis</div>
+          </div>
+        </div>
+        <div class="actor-item reveal delay-2">
+          <div class="actor-badge motive-hacktivist">📢</div>
+          <div class="actor-body">
+            <h3>Hacktivist</h3>
+            <p>Kelompok yang menyerang untuk menyampaikan pesan politik/ideologi — membocorkan data (doxxing massal) atau merusak layanan perusahaan yang dianggap melanggar nilai mereka.</p>
+            <div class="actor-meta">Motivasi: Ideologi &nbsp;·&nbsp; Keahlian: Menengah &nbsp;·&nbsp; Skala: Sedang</div>
+          </div>
+        </div>
+        <div class="actor-item reveal delay-3">
+          <div class="actor-badge motive-insider">👔</div>
+          <div class="actor-body">
+            <h3>Insider Threat</h3>
+            <p>Ancaman dari dalam organisasi — karyawan, kontraktor, atau mitra yang punya akses sah tetapi menyalahgunakannya: mencuri data pelanggan, menjual informasi rahasia, atau memasang backdoor.</p>
+            <div class="actor-meta">Motivasi: Uang/Revenge &nbsp;·&nbsp; Keahlian: Akses Internal &nbsp;·&nbsp; Skala: Tertarget</div>
+          </div>
+        </div>
+        <div class="actor-item reveal delay-1">
+          <div class="actor-badge motive-script kiddie">🧒</div>
+          <div class="actor-body">
+            <h3>Script Kiddie &amp; Peneliti</h3>
+            <p>Individu dengan keterampilan terbatas yang memakai tools siap pakai untuk iseng atau mencari sensasi — namun tetap bisa menyebabkan kebocoran data tidak sengaja. Peneliti keamanan sebaliknya justru membantu menemukan celah (bug bounty).</p>
+            <div class="actor-meta">Motivasi: Iseng/Fame &nbsp;·&nbsp; Keahlian: Rendah–Menengah &nbsp;·&nbsp; Skala: Kecil</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BAB 5: DAMPAK ===== -->
+  <section class="section section-dark" id="bab-dampak">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="bab-label">Bab 05</span>
+        <h2>Dampak Pelanggaran Data Pribadi</h2>
+        <p>Kebocoran data bukan sekadar "data hilang" — dampaknya berlapis dan bisa berlangsung bertahun-tahun.</p>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-card reveal">
+          <div class="impact-icon">😰</div>
+          <h3>Dampak Individu</h3>
+          <ul>
+            <li>Pencurian identitas &amp; penipuan finansial</li>
+            <li>Stalking &amp; doxxing</li>
+            <li>Diskriminasi &amp; perundungan</li>
+            <li>Stres psikologis jangka panjang</li>
+          </ul>
+        </div>
+        <div class="impact-card reveal delay-1">
+          <div class="impact-icon">🏢</div>
+          <h3>Dampak Organisasi</h3>
+          <ul>
+            <li>Kerugian finansial langsung (tebusan, denda)</li>
+            <li>Turunnya kepercayaan pelanggan</li>
+            <li>Biaya respons insiden &amp; forensik</li>
+            <li>Sanksi administratif &amp; pidana UU PDP</li>
+          </ul>
+        </div>
+        <div class="impact-card reveal delay-2">
+          <div class="impact-icon">🌍</div>
+          <h3>Dampak Masyarakat</h3>
+          <ul>
+            <li>Erosi kepercayaan pada layanan digital</li>
+            <li>Ketimpangan bagi kelompok rentan</li>
+            <li>Disinformasi berbasis data curian</li>
+            <li>Biaya sosial ekonomi yang masif</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="case-study reveal">
+        <h3>📌 Studi Kasus: Pelanggaran Data Skala Besar</h3>
+        <p>Badan Siber dan Sandi Negara (BSSN) mencatat ratusan insiden kebocoran data dari sektor publik dan privat di Indonesia setiap tahun. Kasus-kasus menonjol melibatkan kebocoran data kependudukan jutaan orang, data pelanggan e-commerce, dan rekam medis — yang kemudian beredar di forum underground untuk dijual atau dipakai phishing yang sangat personal.</p>
+        <div class="case-stats">
+          <div class="case-stat"><span class="case-num">2.6M</span><span>catatan terdampak rata-rata per insiden besar</span></div>
+          <div class="case-stat"><span class="case-num">Rp 5M</span><span>denda administratif maksimal UU PDP per pelanggaran</span></div>
+          <div class="case-stat"><span class="case-num">6 thn</span><span>ancaman pidana maksimal untuk pelanggaran serius</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BAB 6: KERANGKA HUKUM ===== -->
+  <section class="section section-light" id="bab-hukum">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="bab-label">Bab 06</span>
+        <h2>Kerangka Hukum Perlindungan Data Pribadi</h2>
+        <p>Di Indonesia, UU PDP menjadi landasan utama perlindungan data pribadi.</p>
+      </div>
+
+      <div class="law-grid">
+        <div class="law-card reveal">
+          <div class="law-header">
+            <span class="law-badge">UU No. 27/2022</span>
+            <h3>UU Pelindungan Data Pribadi</h3>
+          </div>
+          <p><strong>UU PDP</strong> mengatur hak subjek data (Anda) dan kewajiban pengendali data (perusahaan/instansi). Poin penting:</p>
+          <ul class="check-list">
+            <li><strong>Persetujuan:</strong> Pengumpulan data harus atas persetujuan yang sah dan spesifik.</li>
+            <li><strong>Hak subjek data:</strong> Hak mengakses, memperbaiki, menghapus (right to be forgotten), dan menarik persetujuan.</li>
+            <li><strong>DPO wajib:</strong> Pengendali data dengan kategori tertentu wajib menunjuk Pejabat Pelindung Data.</li>
+            <li><strong>Sanksi:</strong> Denda administratif hingga 2% pendapatan tahunan / maksimal Rp5 miliar; pidana hingga 6 tahun penjara.</li>
+          </ul>
+          <div class="transisi-note">⏳ <em>Periode transisi 2 tahun — semua organisasi wajib patuh penuh per Oktober 2024.</em></div>
+        </div>
+        <div class="law-card reveal delay-1">
+          <div class="law-header">
+            <span class="law-badge">UU ITE</span>
+            <h3>UU Informasi &amp; Transaksi Elektronik</h3>
+          </div>
+          <p><strong>UU ITE</strong> mengatur kejahatan siber di Indonesia, termasuk:</p>
+          <ul class="check-list">
+            <li>Akses ilegal ke sistem elektronik (Pasal 30)</li>
+            <li>Intersepsi &amp; perubahan data elektronik (Pasal 32)</li>
+            <li>Penyebaran konten ilegal &amp; hoaks (Pasal 27-28)</li>
+            <li>Doxxing — penyebaran data pribadi tanpa hak (Pasal 26)</li>
+          </ul>
+        </div>
+        <div class="law-card reveal delay-2">
+          <div class="law-header">
+            <span class="law-badge">UU 11/2008 jo 19/2016</span>
+            <h3>UU ITE &amp; Regulasi Pendukung</h3>
+          </div>
+          <p>Regulasi pelengkap yang relevan:</p>
+          <ul class="check-list">
+            <li><strong>PP 71/2019:</strong> Penyelenggaraan Sistem dan Transaksi Elektronik (PSTE).</li>
+            <li><strong>Permenkominfo:</strong> Aturan detail perlindungan data dalam PSTE.</li>
+            <li><strong>BSSN:</strong> Lembaga yang menangani insiden siber nasional.</li>
+            <li><strong>OJK/BI:</strong> Regulasi sektoral untuk perlindungan data keuangan.</li>
+          </ul>
+        </div>
+        <div class="law-card reveal delay-3">
+          <div class="law-header">
+            <span class="law-badge">GDPR</span>
+            <h3>Standar Global: GDPR</h3>
+          </div>
+          <p><strong>GDPR</strong> (Uni Eropa) menjadi standar emas perlindungan data global. Banyak perusahaan Indonesia yang bertransaksi dengan Uni Eropa wajib mematuhinya. Prinsipnya: <em>lawfulness, fairness, transparency, purpose limitation, data minimization, accuracy, storage limitation, integrity, accountability</em>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BAB 7: MITIGASI ===== -->
+  <section class="section section-dark" id="bab-mitigasi">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="bab-label">Bab 07</span>
+        <h2>Strategi Mitigasi &amp; Praktik Terbaik</h2>
+        <p>Keamanan data adalah tanggung jawab bersama — individu, organisasi, dan pemerintah.</p>
+      </div>
+
+      <div class="mitigasi-grid">
+        <div class="mitigasi-col reveal">
+          <h3>🧑 Untuk Individu</h3>
+          <ul class="check-list">
+            <li>Pakai <strong>password manager</strong> + password unik &amp; panjang</li>
+            <li>Aktifkan <strong>autentikasi multi-faktor (MFA/2FA)</strong> di semua akun penting</li>
+            <li>Waspada email/SMS mencurigakan — verifikasi lewat kanal resmi</li>
+            <li>Update perangkat &amp; aplikasi secara rutin</li>
+            <li>Batasi data yang dibagikan di media sosial (OSINT)</li>
+            <li>Gunakan HTTPS, VPN di WiFi publik, dan enkripsi chat sensitif</li>
+            <li>Backup data penting secara berkala (3-2-1 rule)</li>
+          </ul>
+        </div>
+        <div class="mitigasi-col reveal delay-1">
+          <h3>🏢 Untuk Organisasi</h3>
+          <ul class="check-list">
+            <li>Implementasikan <strong>enkripsi</strong> data at-rest &amp; in-transit</li>
+            <li>Least privilege access + segmentasi jaringan</li>
+            <li>Security awareness training rutin untuk karyawan</li>
+            <li>Incident response plan &amp; latihan simulasi (tabletop)</li>
+            <li>Audit keamanan berkala &amp; penetration testing</li>
+            <li>Patuh UU PDP: DPO, ROPA, prosedur kebocoran data</li>
+          </ul>
+        </div>
+        <div class="mitigasi-col reveal delay-2">
+          <h3>🏛️ Untuk Pemerintah</h3>
+          <ul class="check-list">
+            <li>Penegakan UU PDP &amp; sosialisasi hak warga</li>
+            <li>Koordinasi BSSN untuk respons insiden nasional</li>
+            <li>Regulasi &amp; sertifikasi industri keamanan siber</li>
+            <li>Perlindungan infrastruktur kritis &amp; layanan publik</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="framework-box reveal">
+        <h3>📐 Kerangka Analisis Risiko: NIST Cybersecurity Framework</h3>
+        <div class="framework-steps">
+          <div class="fw-step"><div class="fw-num">1</div><div><strong>Identify</strong><p>Peta aset &amp; risiko data pribadi</p></div></div>
+          <div class="fw-arrow">→</div>
+          <div class="fw-step"><div class="fw-num">2</div><div><strong>Protect</strong><p>Kontrol preventif (enkripsi, akses, pelatihan)</p></div></div>
+          <div class="fw-arrow">→</div>
+          <div class="fw-step"><div class="fw-num">3</div><div><strong>Detect</strong><p>Monitoring &amp; deteksi anomali</p></div></div>
+          <div class="fw-arrow">→</div>
+          <div class="fw-step"><div class="fw-num">4</div><div><strong>Respond</strong><p>Prosedur tanggap insiden</p></div></div>
+          <div class="fw-arrow">→</div>
+          <div class="fw-step"><div class="fw-num">5</div><div><strong>Recover</strong><p>Pemulihan &amp; perbaikan pasca-insiden</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUIZ ===== -->
+  <section class="section section-light" id="quiz">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Evaluasi</span>
+        <h2>Kuis Pemahaman</h2>
+        <p>Uji pemahaman Anda — 8 soal pilihan ganda dengan penjelasan langsung.</p>
+      </div>
+
+      <div class="quiz-container reveal" id="quizContainer">
+        <!-- Quiz di-render oleh JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GLOSARIUM ===== -->
+  <section class="section section-dark" id="glosarium">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Referensi</span>
+        <h2>Glosarium Istilah</h2>
+        <p>Klik istilah untuk melihat definisinya.</p>
+      </div>
+      <div class="glossary-grid">
+        <details class="glossary-item reveal"><summary>Phishing</summary><p>Serangan penipuan yang memancing korban memberikan data sensitif (password, OTP, PIN) melalui pesan atau situs palsu yang meniru entitas tepercaya.</p></details>
+        <details class="glossary-item reveal delay-1"><summary>Ransomware</summary><p>Jenis malware yang mengenkripsi data korban lalu menuntut pembayaran tebusan untuk memulihkan akses. Varian modern juga mengancam membocorkan data.</p></details>
+        <details class="glossary-item reveal delay-2"><summary>Social Engineering</summary><p>Teknik manipulasi psikologis untuk membuat korban menyerahkan informasi rahasia secara sukarela — memanfaatkan kepercayaan, urgensi, atau rasa takut.</p></details>
+        <details class="glossary-item reveal"><summary>Data Pribadi Sensitif</summary><p>Kategori data yang perlindungannya lebih ketat menurut UU PDP: data kesehatan, biometrik, keuangan, keyakinan/agama, dan data anak.</p></details>
+        <details class="glossary-item reveal delay-1"><summary>Two-Factor Authentication (2FA)</summary><p>Metode verifikasi identitas yang memerlukan dua faktor berbeda — misalnya password + kode OTP — untuk mengakses akun, mengurangi risiko pencurian kredensial.</p></details>
+        <details class="glossary-item reveal delay-2"><summary>Dark Web</summary><p>Bagian internet yang tidak terindeks mesin pencari dan hanya bisa diakses lewat jaringan anonim (Tor). Tempat umum jual beli data curian.</p></details>
+        <details class="glossary-item reveal"><summary>Doxxing</summary><p>Praktik membocorkan informasi pribadi seseorang (alamat, telepon, data keluarga) tanpa izin ke publik, sering dipakai untuk pelecehan atau pemerasan.</p></details>
+        <details class="glossary-item reveal delay-1"><summary>Man-in-the-Middle (MITM)</summary><p>Serangan di mana penyerang diam-diam menyisipkan diri di antara dua pihak yang berkomunikasi untuk menyadap atau mengubah data.</p></details>
+        <details class="glossary-item reveal delay-2"><summary>Data Breach</summary><p>Kejadian di mana data pribadi diakses, dicuri, atau dibocorkan tanpa otorisasi — baik karena serangan siber maupun kelalaian internal.</p></details>
+        <details class="glossary-item reveal"><summary>End-to-End Encryption (E2EE)</summary><p>Enkripsi di mana hanya pengirim dan penerima pesan yang memiliki kunci untuk membaca isi pesan — penyedia layanan pun tidak bisa mengaksesnya.</p></details>
+        <details class="glossary-item reveal delay-1"><summary>Privilege Escalation</summary><p>Teknik penyerang menaikkan level aksesnya dalam sistem — misalnya dari user biasa menjadi administrator — untuk mengakses data yang lebih sensitif.</p></details>
+        <details class="glossary-item reveal delay-2"><summary>OSINT</summary><p>Open Source Intelligence — pengumpulan informasi dari sumber terbuka (media sosial, website publik) yang bisa dimanfaatkan penyerang untuk menyusun profil korban.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PENUTUP ===== -->
+  <section class="section section-outro" id="penutup">
+    <div class="container reveal">
+      <div class="outro-card">
+        <h2>Terima Kasih Telah Belajar 🎓</h2>
+        <p>
+          Keamanan data pribadi dimulai dari kesadaran setiap individu.
+          Ingat prinsip <strong>"Jangan Percaya, Selalu Verifikasi"</strong> — dan jadilah lapisan pertahanan pertama bagi diri sendiri dan orang-orang di sekitar Anda.
+        </p>
+        <a href="#beranda" class="btn btn-light">Kembali ke Atas</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>Media Ajar Digital</strong> — Analisis Ancaman Keamanan Data Pribadi di Era Digital</p>
+      <p class="footer-sub">Disusun sebagai bahan pembelajaran keamanan siber &amp; privasi digital · Referensi: UU PDP No. 27/2022, UU ITE, NIST CSF, APWG, IBM Cost of a Data Breach Report</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
